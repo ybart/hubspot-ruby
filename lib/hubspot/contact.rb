@@ -95,9 +95,12 @@ module Hubspot
         new(response)
       end
 
+      # Parameters
+      #   emails: a String or an arrays of emails
+      #   with_properties_versions: a flag to get the full properties Hash with `versions` details
       # {https://developers.hubspot.com/docs/methods/contacts/get_contact_by_email}
       # {https://developers.hubspot.com/docs/methods/contacts/get_batch_by_email}
-      def find_by_email(emails)
+      def find_by_email(emails, with_properties_versions = false)
         batch_mode, path, params = case emails
         when String then [false, GET_CONTACT_BY_EMAIL_PATH, { contact_email: emails }]
         when Array then [true, GET_CONTACTS_BY_EMAIL_PATH, { batch_email: emails }]
@@ -107,7 +110,7 @@ module Hubspot
         begin
           response = Hubspot::Connection.get_json(path, params)
           if batch_mode
-            response.map{|_, contact| new(contact)}
+            response.map{|_, contact| new(contact, with_properties_versions)}
           else
             new(response)
           end
@@ -142,11 +145,12 @@ module Hubspot
       end
     end
 
-    attr_reader :properties, :vid, :is_new
+    attr_reader :properties, :properties_versions, :vid, :is_new
 
-    def initialize(response_hash)
+    def initialize(response_hash, with_properties_versions = false)
       props = response_hash['properties']
       @properties = Hubspot::Utils.properties_to_hash(props) unless props.blank?
+      @properties_versions = Hubspot::Utils.properties_versions_to_hash(props) if with_properties_versions && !props.blank?
       @vid = response_hash['vid']
     end
 

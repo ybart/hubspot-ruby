@@ -8,6 +8,13 @@ module Hubspot
         newprops
       end
 
+      # Parses the hubspot properties format into a key-value hash for versions
+      def properties_versions_to_hash(props)
+        newprops = HashWithIndifferentAccess.new
+        props.each { |k, v| newprops[k] = v["versions"] }
+        newprops
+      end
+
       # Turns a hash into the hubspot properties format
       def hash_to_properties(hash, opts = {})
         key_name = opts[:key_name] || "property"

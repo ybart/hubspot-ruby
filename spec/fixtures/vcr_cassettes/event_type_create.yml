@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: UTF-8
+      string: '{"name":"My Event Type","applicationId":34597,"headerTemplate":"Header","detailTemplate":"Details","objectType":"CONTACT"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '133'
+      Date:
+      - Thu, 06 Oct 2016 12:58:29 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=DEA9F17C8D7DFA449B66C14FC555239A5435930EC4440000754AF657007E982A~plxEiioieUxMLvsiHeoqAuiUrBv1pwv1+LzRmMAmNDxqEmGB5DjRxlAO+avpgrYvXi2ZiRLPv3O51iSah89w7lo34y/OjBcLcHn9xKCVWidcVcKRKmWQRaYQOIDk74YgZtYqIXdy3dhFNPiH/kcGMbVE/6qXqkKc1P6c4nD0VBZMylbTx4B/3yy6alsfdqAiv89dVwtJtctvwFU2w4viG0oqSvMEVEH+zTj9i3CzcWZxA=;
+        expires=Thu, 06 Oct 2016 14:58:29 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"id":15526,"name":"My Event Type","headerTemplate":"Header","detailTemplate":"Details","applicationId":34597,"objectType":"CONTACT"}'
+    http_version: 
+  recorded_at: Thu, 06 Oct 2016 12:58:30 GMT
+recorded_with: VCR 2.4.0

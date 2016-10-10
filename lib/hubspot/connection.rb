@@ -45,7 +45,7 @@ module Hubspot
       end
 
       def generate_url(path, params={}, options={})
-        Hubspot::Config.ensure! :hapikey
+        Hubspot::Config.ensure! :hapikey unless options[:hapikey] == false
         path = path.clone
         params = params.clone
         base_url = options[:base_url] || Hubspot::Config.base_url
@@ -97,6 +97,13 @@ module Hubspot
 
     def self.submit(path, opts)
       url = generate_url(path, opts[:params], { base_url: 'https://forms.hubspot.com', hapikey: false })
+      post(url, body: opts[:body], headers: { 'Content-Type' => 'application/x-www-form-urlencoded' })
+    end
+  end
+
+  class OAuthConnection < Connection
+    def self.submit(path, opts)
+      url = generate_url(path, opts[:params], { hapikey: false })
       post(url, body: opts[:body], headers: { 'Content-Type' => 'application/x-www-form-urlencoded' })
     end
   end

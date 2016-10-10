@@ -1,0 +1,195 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: UTF-8
+      string: '{"name":"Contact event","applicationId":34597,"headerTemplate":"Contact
+        header","detailTemplate":"Contact details","objectType":"CONTACT"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Trace:
+      - 1BABBB2B84C9B0A2513CD6A548EF177D7F934F2BD31917450CDC669AA0
+      Content-Length:
+      - '149'
+      Date:
+      - Thu, 06 Oct 2016 14:34:35 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=2E7A4796908074E0FE48F6DAF9AF6CCC5134A0BB9E7E0000FB60F65743207415~pluhQxUbAsYeagJitJ3aRKy3wpqef5r2QGLP9ExpvOaLnWiOHra7jrIHZv3zAePPiAngbZ07b9wtbaDaUmnTMuAQNgl772cv0tb8iJOCvCsXcIEp02Vc/+xaykh015u8pcI7kMM/4LuHuLEBybFTooGHuabv93kPWGiRcXhP6aTVKth4DgofqY7AxJh3wzp+gSzJcSL746Qr7Ul6SJI3mR72Pg+MZwtCH1BRQ9q+wXF2s=;
+        expires=Thu, 06 Oct 2016 16:34:35 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"id":15539,"name":"Contact event","headerTemplate":"Contact header","detailTemplate":"Contact
+        details","applicationId":34597,"objectType":"CONTACT"}'
+    http_version: 
+  recorded_at: Thu, 06 Oct 2016 14:34:34 GMT
+- request:
+    method: post
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: UTF-8
+      string: '{"name":"Company event","applicationId":34597,"headerTemplate":"Company
+        header","detailTemplate":"Company details","objectType":"COMPANY"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '149'
+      Date:
+      - Thu, 06 Oct 2016 14:34:35 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=CC1DDFB8D9B192C3B5ADFA940B64D8705134A0BB9E7E0000FB60F657D5F3477E~plnXlgZZK2TxJBSeKWKGL0FOyCjzAPCFFuCwzYNJvnqTsIk/HnSDo5plGI6rTMRWe06Wqlbd//JrXWvKqQvJlIOGkginjST40kWbttC1BLBqHuVLjsS41Bq3TKqqOfvuKr0l/lYXox278yI/NmlU1s95sCBrbrsIFdTEl6+OggsBk4NvqEM48u2U/myKty+i2Vu/qjgs4dnaOyyHikMJm6+jbkk6ZAzbP28RmNMvGA2EQ=;
+        expires=Thu, 06 Oct 2016 16:34:35 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"id":15540,"name":"Company event","headerTemplate":"Company header","detailTemplate":"Company
+        details","applicationId":34597,"objectType":"COMPANY"}'
+    http_version: 
+  recorded_at: Thu, 06 Oct 2016 14:34:34 GMT
+- request:
+    method: post
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: UTF-8
+      string: '{"name":"Deal event","applicationId":34597,"headerTemplate":"Deal header","detailTemplate":"Deal
+        details","objectType":"DEAL"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '137'
+      Date:
+      - Thu, 06 Oct 2016 14:34:36 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=ED1DC8F59FE134A4EBC10B77F472C3F75134A0BB9E7E0000FC60F6575F0F2944~plzwvy9EUxwZ1I6vLV2NQ2MDjm9xv03li79p7icNObAY7ufbVHJGBAe96Re7ee4KUW08YsaDdVRqZ11ll8/sKW+s86bFjqKBLkjUsmqw297HPKeYBcDq5RWBAtVJbyDPLBYiBzppvnmhkcLpR3nh56wLU1Jj1xggRZRmmq7XgDvOB+wcPoVbTZkyGil7ndxlrCG9V0ZHwD0NdrNrXFp88Ty+gta3oXRa54AHCFDIBKkVQ=;
+        expires=Thu, 06 Oct 2016 16:34:36 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"id":15541,"name":"Deal event","headerTemplate":"Deal header","detailTemplate":"Deal
+        details","applicationId":34597,"objectType":"DEAL"}'
+    http_version: 
+  recorded_at: Thu, 06 Oct 2016 14:34:36 GMT
+- request:
+    method: post
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '194'
+      Date:
+      - Thu, 06 Oct 2016 14:34:37 GMT
+      Connection:
+      - close
+      Set-Cookie:
+      - ak_bmsc=210D167BAFBD56D5BB16A8468A75CC205134A0BB9E7E0000FD60F657472A155A~plzzzB/BtVZ1vI8iH0Y9Nk3kDq2raCvNzyogm0YHS0/cWgYy/8u4V7LCYsFRVW9+1qxGPFKLNXArO/rGHSY9gmJqs3P7lRqB/2mCz1JUtcJ0eiGVd8s6zZFqXwcUmFrO5NRE8J6nqtoBGLGKvycjTFvU8BnoUDneNultgG4ZQA7XEUQPYq7s64v2l4zp/cpCNwxj5LqXh2uJ8Wh/FdUDd3OSlWshyDg5v6Qv4D26CXgkw=;
+        expires=Thu, 06 Oct 2016 16:34:37 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"unprocessable entity","correlationId":"2d5b4f4e-f4b6-4c19-85e9-8f990e85aa05","errors":["request
+        entity required"],"requestId":"b61775ba-0eff-4fd5-ac6c-9e4c2ece41da"}'
+    http_version: 
+  recorded_at: Thu, 06 Oct 2016 14:34:37 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2950'
+      Date:
+      - Thu, 06 Oct 2016 14:44:25 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=110BE3DFEBD4316842DBF8D2CF19990A5134A0BB9E7E00004963F6574C91FE32~plvgg1POD1yarVm7cIZfRXXBRao3wo35VH3h85XIy8Rmplke9xPgiDuY7uBfw/KD95rzWOYexJjOdYxGklwp2hedaDMGPjnp7b3MyfIAyK+jrY84ArEdjGULPvdImrM4r0NhjWz4h9e8pnoh0lnuMEeu9Y5xKUJ3PkSJV+lTtMCt39WUmmVG5e4kpGtPrcIIZb1E+sULv6wFlVROmbpg53r+UdimGUUODWT9bh3rDnFvE=;
+        expires=Thu, 06 Oct 2016 16:44:25 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '[{"id":15521,"name":"My Event Type","headerTemplate":null,"detailTemplate":null,"applicationId":34597,"objectType":"CONTACT"},{"id":15522,"name":"My
+        Event Type","headerTemplate":null,"detailTemplate":null,"applicationId":34597,"objectType":"CONTACT"},{"id":15523,"name":"My
+        Event Type","headerTemplate":null,"detailTemplate":null,"applicationId":34597,"objectType":"CONTACT"},{"id":15524,"name":"My
+        Event Type","headerTemplate":null,"detailTemplate":null,"applicationId":34597,"objectType":"CONTACT"},{"id":15525,"name":"My
+        Event Type","headerTemplate":null,"detailTemplate":null,"applicationId":34597,"objectType":"CONTACT"},{"id":15526,"name":"My
+        Event Type","headerTemplate":"Header","detailTemplate":"Details","applicationId":34597,"objectType":"CONTACT"},{"id":15527,"name":"Contact
+        event","headerTemplate":"Contact header","detailTemplate":"Contact details","applicationId":34597,"objectType":"CONTACT"},{"id":15528,"name":"Company
+        event","headerTemplate":"Company header","detailTemplate":"Company details","applicationId":34597,"objectType":"COMPANY"},{"id":15529,"name":"Deal
+        event","headerTemplate":"Deal header","detailTemplate":"Deal details","applicationId":34597,"objectType":"DEAL"},{"id":15530,"name":"Contact
+        event","headerTemplate":"Contact header","detailTemplate":"Contact details","applicationId":34597,"objectType":"CONTACT"},{"id":15531,"name":"Company
+        event","headerTemplate":"Company header","detailTemplate":"Company details","applicationId":34597,"objectType":"COMPANY"},{"id":15532,"name":"Deal
+        event","headerTemplate":"Deal header","detailTemplate":"Deal details","applicationId":34597,"objectType":"DEAL"},{"id":15533,"name":"Contact
+        event","headerTemplate":"Contact header","detailTemplate":"Contact details","applicationId":34597,"objectType":"CONTACT"},{"id":15534,"name":"Company
+        event","headerTemplate":"Company header","detailTemplate":"Company details","applicationId":34597,"objectType":"COMPANY"},{"id":15535,"name":"Deal
+        event","headerTemplate":"Deal header","detailTemplate":"Deal details","applicationId":34597,"objectType":"DEAL"},{"id":15536,"name":"Contact
+        event","headerTemplate":"Contact header","detailTemplate":"Contact details","applicationId":34597,"objectType":"CONTACT"},{"id":15537,"name":"Company
+        event","headerTemplate":"Company header","detailTemplate":"Company details","applicationId":34597,"objectType":"COMPANY"},{"id":15538,"name":"Deal
+        event","headerTemplate":"Deal header","detailTemplate":"Deal details","applicationId":34597,"objectType":"DEAL"},{"id":15539,"name":"Contact
+        event","headerTemplate":"Contact header","detailTemplate":"Contact details","applicationId":34597,"objectType":"CONTACT"},{"id":15540,"name":"Company
+        event","headerTemplate":"Company header","detailTemplate":"Company details","applicationId":34597,"objectType":"COMPANY"},{"id":15541,"name":"Deal
+        event","headerTemplate":"Deal header","detailTemplate":"Deal details","applicationId":34597,"objectType":"DEAL"}]'
+    http_version: 
+  recorded_at: Thu, 06 Oct 2016 14:44:25 GMT
+recorded_with: VCR 2.4.0

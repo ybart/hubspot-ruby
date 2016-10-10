@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types/15525/properties?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '168'
+      Date:
+      - Fri, 07 Oct 2016 14:09:09 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=6DCEA3F07F53606DB12E92242219AD215134C97E7271000085ACF75743712D50~plmMNqavbibBQ6JncnJF2Ppqb7cabgBArkcaeviBAkQY5T987Xc2Q7iIywINoH4hJlwowundTZJQL7o8sBrIBCJmJR3DtnJwhkTl6AbsUw/JvbUFm05KS4Mq+PucBZA747f4a1dIXxYPGCVUH9H3DFdfC25cla9vYw8hZAMLoenyut46SI54Gd1mifYWdA7nqLAgIiJrwf35SLFCi7Ppk9mzKgtYJljUtx9otH7tcG6QU=;
+        expires=Fri, 07 Oct 2016 16:09:09 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '[{"options":[],"name":"MyEventProperty","id":9830,"label":"My Event
+        Property","propertyType":"String","contactProperty":null,"objectProperty":null,"eventTypeId":15525}]'
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 14:09:09 GMT
+- request:
+    method: delete
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types/15525/properties/9830?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Oct 2016 14:09:10 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=5DFA1F8A60EF63D61E4EE6AF6AC435ED5134C97E7271000086ACF757E4CF3C3A~plF1LLbGjXZeioW1EfXlIXAhWSsBBDlzYGOxRiDzke61EIChd4n/8WyrBGxnqZVhQjHDTLzc9D+tovHSxwKxsVJSat7uIzb1taN+hRndWUcVXKUkLAqU/d7UJR8phHMAWItfVS9W+//cM26lfhgEE7ZP7s+pTdU4O583IOiNpYcHN0AlgNUMkZTwh8rkNosv4Hz4V61VNWFcDpv0lggq7gl/tEPjQ4GhYlElLnghvbRf8=;
+        expires=Fri, 07 Oct 2016 16:09:10 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 14:09:10 GMT
+- request:
+    method: post
+    uri: https://api.hubapi.com/integrations/v1/34597/timeline/event-types/15525/properties?hapikey=7e0e9eb0-6f90-4471-b769-864f8dfa486d&userId=215482
+    body:
+      encoding: UTF-8
+      string: '{"name":"MyEventProperty","label":"My Event Property","propertyType":"String","objectProperty":null,"options":[]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '166'
+      Date:
+      - Fri, 07 Oct 2016 14:09:10 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=E1636B7D51A9600970C3A0B5FBC4E9EC5134C97E7271000086ACF757E11E157B~pldN/Rj0NHmXsKawGFl/XXnQOxRvJ2g1DAvy1S1S9Uj0qon4jpCRtNrOHybZnR6vVzDRZ3ukMdTeoo+9ljRl4LK5ciyfESc0H6EWM3Anpv8mAyERhUrZbzAUUsilXSbePYtMBi41AuXnMPC1P6rRA28VV1d4hMTvElP9PedGg5QnC6QRItCoKi+znBaUio0kGzVoMIh1NZaWvLIbgHFzLez7LYt0VvjbxpVtf3+fkX7yo=;
+        expires=Fri, 07 Oct 2016 16:09:10 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"options":[],"name":"MyEventProperty","id":9831,"propertyType":"String","label":"My
+        Event Property","eventTypeId":15525,"contactProperty":null,"objectProperty":null}'
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 14:09:10 GMT
+recorded_with: VCR 2.4.0

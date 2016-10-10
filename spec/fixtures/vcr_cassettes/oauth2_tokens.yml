@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/oauth/v1/token
+    body:
+      encoding: UTF-8
+      string: grant_type=authorization_code&client_id=2d966b5e-5bd9-4056-8ee8-19e17674e227&client_secret=9b13795b-5e1c-4fc5-b33c-ce33b2c73fa6&redirect_uri=http%3A%2F%2Fhttpbin.org%2Fget&code=43781707-308b-470a-be1d-06985199d760
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Cache-Control:
+      - no-store, no-transform
+      Content-Type:
+      - application/json; charset=UTF-8
+      Pragma:
+      - no-cache
+      X-Trace:
+      - 1B405D5A636C1439DE375EFAD1B19ABB5E403C9A0211D00F49228371BC
+      Content-Length:
+      - '160'
+      Date:
+      - Fri, 07 Oct 2016 16:02:54 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ak_bmsc=FCE4224B904BD6AF9F085240A278ABED5134A0BB9E7E00002EC7F75732EDE81C~plNUkaNFDOmH3UGIy+imjP8/sp/EU1UmbeRl1cUx/r/o3KtJDMiB7mKuK9Mpz9WOHUcKi9UJsDVHLMzoTDerSWNi0siHfyuzTJpCe6wzjRqJolaDBY1PB+pJugbOOm2l5kMOakKi11N25xbdODYggeefYoea5EXtmECp1Agicvi3vwXk1iGgK+8VFQqDYSEhGdlxiQ9MSBMW33qEC+HhQQbSKImE7sE20x0mEKhW+NhR4=;
+        expires=Fri, 07 Oct 2016 18:02:54 GMT; max-age=7200; path=/; domain=.hubapi.com;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"COfFron6KhICWwEYs-gDILqTDSiljgIyGQBVLLyDCeslUBZIlLBQ62zU_EmBoYGIWbs","refresh_token":"29006f21-1778-4917-b180-42402e560f99","expires_in":21600}'
+    http_version: 
+  recorded_at: Fri, 07 Oct 2016 16:02:54 GMT
+recorded_with: VCR 2.4.0
